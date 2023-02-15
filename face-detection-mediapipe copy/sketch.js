@@ -43,6 +43,7 @@ let sketch = function(p) {
         const x = p.width - (facePoint.x * p.width)
         const y = facePoint.y * p.height
         p.point(x, y);
+        //do art
       }
     }
   }
