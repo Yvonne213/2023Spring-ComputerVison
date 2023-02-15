@@ -22,8 +22,7 @@ let sketch = function(p) {
   }
 
   p.drawFaces = function() {
-    p.strokeWeight(8);
-
+    p.strokeWeight(3);
     for(let i = 0; i < detections.detections.length; i++) {
 
       // it's not necessary to create this boundingBox variable, but it makes for less typing and neater coder
@@ -42,7 +41,10 @@ let sketch = function(p) {
         const facePoint = detections.detections[i].landmarks[j]
         const x = p.width - (facePoint.x * p.width)
         const y = facePoint.y * p.height
-        p.point(x, y);
+      //  p.point(x, y);
+      p.textSize(20)
+      p.text(j, x, y)
+
         //do art
       }
     }
