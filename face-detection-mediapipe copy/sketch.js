@@ -31,7 +31,7 @@ let sketch = function(p) {
       const bbX = p.width - boundingBox.xCenter * p.width;
       const bbY = boundingBox.yCenter * p.height;
       const bbW = boundingBox.width * p.width;
-   
+      const bbH = boundingBox.height * p.height;
 
       p.noStroke();
       p.fill(255, 0, 255, 80);
